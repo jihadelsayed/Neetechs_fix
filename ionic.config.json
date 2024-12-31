@@ -1,0 +1,7 @@
+{
+  "name": "Neetechs_Fix",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
