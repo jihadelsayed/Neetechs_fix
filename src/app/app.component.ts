@@ -4,6 +4,8 @@ import { Component } from '@angular/core';
 //import { IonicModule } from '@ionic/angular'; // Import IonicModule if needed
 import { IonicModule } from '@ionic/angular';
 import { Router } from '@angular/router';
+import { home, people, cart, cube, notifications, document, settings, helpCircle, logOut, search, add } from 'ionicons/icons';
+import { addIcons } from 'ionicons';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +17,10 @@ import { Router } from '@angular/router';
 ],
 })//,NavbarComponent, SidebarComponent 
 export class AppComponent {
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+    addIcons({ home, people, cart, cube, notifications, document, settings, helpCircle, logOut, search, add });
+
+  }
 
   // Handles the Floating Action Button click event
   onFabClick() {
