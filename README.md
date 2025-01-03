@@ -13,7 +13,7 @@
 ## Technology Stack
 - **Frontend**: Angular (TypeScript)
 - **Backend**: Node.js (Express.js) or your chosen backend framework
-- **Database**: MySQL, PostgreSQL, or MongoDB (based on your choice)
+- **Database**: PostgreSQL
 - **Styling**: Tailwind CSS, Bootstrap, or Material Design for Angular
 - **Deployment**: Docker, AWS, or Firebase Hosting
 
@@ -30,3 +30,10 @@ Follow these steps to set up **Neetechs_Fix** locally:
    ```bash
    git clone https://github.com/jihadelsayed/Neetechs_Fix.git
    cd Neetechs_Fix
+
+
+Services: Each controller in the API is represented by a service for making HTTP requests.
+Feature Modules: Separate feature modules for each API group (e.g., Dashboard, Customers, POS).
+Routing: Organized routing using dedicated *-routing.module.ts files.
+Shared Module: Components, pipes, and directives that are reused across the app.
+Environment Files: Manage API base URLs and environment-specific settings.
