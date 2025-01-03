@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { IonicModule } from '@ionic/angular'; // Import IonicModule if needed
 
 @Component({
@@ -10,8 +11,15 @@ import { IonicModule } from '@ionic/angular'; // Import IonicModule if needed
 })
 export class SidebarComponent  implements OnInit {
 
-  constructor() { }
+constructor(private router: Router) {
+
+  }
 
   ngOnInit() {}
-
+  // Handles the logout logic
+  logout() {
+    console.log('User logged out');
+    // Add your logout logic (e.g., clearing session or token)
+    this.router.navigate(['/auth/login']);
+  }
 }
