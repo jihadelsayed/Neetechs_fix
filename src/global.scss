@@ -35,3 +35,6 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
+
+/* Design tokens only: do not load the Neetechs reset or override Ionic components. */
+@import '@neetechs/ui/tokens.css';
